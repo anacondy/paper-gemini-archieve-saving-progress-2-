@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Paper | Previous Year Papers</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="theme-green">
+
+    <div id="terminal">
+        <div id="output">
+            <div class="terminal-line">
+                <span class="prompt">$</span> upload_paper.sh
+            </div>
+            <div class="terminal-line">
+                <span class="text-green">▶</span> Initializing upload module...
+            </div>
+            <div class="terminal-line">
+                <span class="text-green">✓</span> Upload module ready
+            </div>
+            <div class="terminal-line">
+                <span class="text-yellow">!</span> Please fill in the required information below:
+            </div>
+        </div>
+
+        <div id="upload-form-container">
+            <form id="upload-form" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="uploader_name">Your Name (Uploader) *</label>
+                    <input type="text" id="uploader_name" name="uploader_name" required placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="paper_title">Paper Title *</label>
+                    <input type="text" id="paper_title" name="paper_title" required placeholder="e.g., Physics 2024 Midterm">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <input type="text" id="subject" name="subject" required placeholder="e.g., Physics">
+                </div>
+
+                <div class="form-group">
+                    <label for="year">Year *</label>
+                    <input type="number" id="year" name="year" required placeholder="2024" min="1900" max="2100">
+                </div>
+
+                <div class="form-group">
+                    <label for="paper_type">Paper Type *</label>
+                    <select id="paper_type" name="paper_type" required>
+                        <option value="">Select type...</option>
+                        <option value="Midterm">Midterm</option>
+                        <option value="Final">Final</option>
+                        <option value="Quiz">Quiz</option>
+                        <option value="Practice">Practice</option>
+                        <option value="Assignment">Assignment</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tags">Tags (comma-separated)</label>
+                    <input type="text" id="tags" name="tags" placeholder="e.g., calculus, derivatives, integrals">
+                    <small>These tags help improve search accuracy</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="paper_file">Upload Paper File (PDF)</label>
+                    <input type="file" id="paper_file" name="paper_file" accept=".pdf">
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="verified" name="verified">
+                        <span>I verify this is an authentic exam paper</span>
+                    </label>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="public" name="public" checked>
+                        <span>Make this paper publicly available</span>
+                    </label>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Submit Paper</button>
+                    <a href="/" class="btn btn-secondary">Cancel</a>
+                </div>
+
+                <div id="upload-status" class="hidden"></div>
+            </form>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
