@@ -58,3 +58,6 @@ http://localhost:5000
 - **Backend**: Flask (Python)
 - **Frontend**: HTML, CSS, JavaScript
 - **Styling**: Terminal-inspired green theme with Fira Code font
+
+
+Made with care by Puppy pilot & anacondy 
