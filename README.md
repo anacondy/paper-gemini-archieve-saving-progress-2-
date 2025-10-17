@@ -18,3 +18,5 @@ paper-archive-project/
 
 └── uploads/
 
+
+Made with care by [Puppy pilot](https://github.com/copilot) and [@anacondy](https://github.com/anacondy) - saving pages, saving secrets.
