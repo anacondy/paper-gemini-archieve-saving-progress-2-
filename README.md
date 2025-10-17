@@ -1,22 +1,23 @@
-# paper-gemini-archieve-saving-progress-2-
+﻿# paper-gemini-archieve-saving-progress-2-
 exam paper downloading website , with ctrl + K , search functionality 
 
 paper-archive-project/
-├── app.py
+â”œâ”€â”€ app.py
 
-├── static/
+â”œâ”€â”€ static/
 
-│   ├── style.css
+â”‚   â”œâ”€â”€ style.css
 
-│   └── script.js
+â”‚   â””â”€â”€ script.js
 
-├── templates/
+â”œâ”€â”€ templates/
 
-│   ├── index.html
+â”‚   â”œâ”€â”€ index.html
 
-│   └── upload.html
+â”‚   â””â”€â”€ upload.html
 
-└── uploads/
+â””â”€â”€ uploads/
 
 
-Made with care by [Puppy pilot](https://github.com/copilot) and [@anacondy](https://github.com/anacondy) - saving pages, saving secrets.
+Made with care by Puppy pilot and @anacondy - saving pages, saving secrets.
+
