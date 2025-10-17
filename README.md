@@ -1,23 +1,63 @@
-﻿# paper-gemini-archieve-saving-progress-2-
-exam paper downloading website , with ctrl + K , search functionality 
+# Previous Year Papers Archive
 
-paper-archive-project/
-â”œâ”€â”€ app.py
+Exam paper downloading website with Ctrl+K search functionality and upload capability.
 
-â”œâ”€â”€ static/
+## Features
 
-â”‚   â”œâ”€â”€ style.css
+- **Terminal-style interface** with green theme
+- **Ctrl+K search functionality** - Quick search through exam papers database
+- **Smart upload navigation** - Type "upload" (case-insensitive) in search to navigate to upload page
+- **Upload form** with:
+  - Uploader name field
+  - Paper details (title, subject, year, type)
+  - Tags for better search accuracy
+  - Verification and public availability checkboxes
+  - File upload support
 
-â”‚   â””â”€â”€ script.js
+## Installation
 
-â”œâ”€â”€ templates/
+1. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-â”‚   â”œâ”€â”€ index.html
+2. Run the application:
+```bash
+python app.py
+```
 
-â”‚   â””â”€â”€ upload.html
+3. Open your browser and navigate to:
+```
+http://localhost:5000
+```
 
-â””â”€â”€ uploads/
+## Usage
+
+### Search Papers
+- Press `Ctrl+K` to open the search modal
+- Type your query (e.g., "Physics 2024")
+- Press Enter to view paper details
+- Press Esc to close the search modal
+
+### Upload Papers
+- Press `Ctrl+K` and type "upload" (or "UPLOAD")
+- Press Enter to navigate to the upload page
+- Fill in the required information:
+  - Your name (uploader)
+  - Paper title
+  - Subject
+  - Year
+  - Paper type
+  - Tags (comma-separated) - helps improve search accuracy
+  - Optional: Upload PDF file
+- Check verification and visibility options
+- Click "Submit Paper"
+
+## Technology Stack
+
+- **Backend**: Flask (Python)
+- **Frontend**: HTML, CSS, JavaScript
+- **Styling**: Terminal-inspired green theme with Fira Code font
 
 
-Made with care by Puppy pilot and @anacondy - saving pages, saving secrets.
-
+Made with care by Puppy pilot & anacondy 
